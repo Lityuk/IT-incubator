@@ -16,3 +16,11 @@
 // var b;
 // b = a;
 //!! 5nd Task
+var a = 9;
+
+//!! 6nd Task
+
+let myFirstName  = "Vladimir";
+let myLastName = "Lityuk";
+
+//!! 7nd Task

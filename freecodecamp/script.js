@@ -7,4 +7,7 @@
 var myName;
 
 //!! 3nd Task
+var a;
+a = 7;
 
+//!! 4nd Task

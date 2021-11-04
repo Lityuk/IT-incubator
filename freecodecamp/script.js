@@ -50,10 +50,10 @@
 // console.log(FCC, fact); // Change this line
 
 //!! 11 Task
-const sum = 10 + 10;
+// const sum = 10 + 10;
 
 //!! 12 Task
-const difference = 45 - 33;
+// const difference = 45 - 33;
 
 // //!! 13-25  Tasks
 
@@ -108,6 +108,14 @@ const difference = 45 - 33;
 // b /= 4;
 // c /= 11;
 
-const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
+// const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
 
 //!! 26 Task
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+
+const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
+
+const myStr = "This is the start. " + "This is the end."; // Change this line
+
+let myStr = "This is the first sentence. ";
+myStr += "This is the second sentence."

@@ -247,7 +247,7 @@
 
 //     functionWithArgs(3, 5);
 
-//!! 51-60 -  Tasks
+//!! 51-55 -  Tasks
 
 function timesFive(num) {
     return num * 5;
@@ -315,3 +315,12 @@ function addFive() {
 addThree();
 addFive();
 
+// Setup
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+//!! 56 -  Tasks
+// Only change code below this line
+processed = processArg(7);

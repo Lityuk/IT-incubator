@@ -353,3 +353,13 @@ function nextInLine(arr, item) {
 
     // Only change code above this line
   }
+
+//!! 59 -  Task
+  function trueOrFalse(wasThatTrue) {
+    // Only change code below this line
+
+  return wasThatTrue ? "Yes, that was true" : "No, that was false";
+
+    // Only change code above this line
+
+  }

@@ -249,129 +249,129 @@
 
 //!! 51-55 -  Tasks
 
-function timesFive(num) {
-    return num * 5;
-  }
+// function timesFive(num) {
+//     return num * 5;
+//   }
 
-  // Declare the myGlobal variable below this line
-let myGlobal = 10;
-let oopsGlobal;
+//   // Declare the myGlobal variable below this line
+// let myGlobal = 10;
+// let oopsGlobal;
 
-function fun1() {
-  // Assign 5 to oopsGlobal Here
-oopsGlobal = 5;
-}
+// function fun1() {
+//   // Assign 5 to oopsGlobal Here
+// oopsGlobal = 5;
+// }
 
-// Only change code above this line
+// // Only change code above this line
 
-function fun2() {
-  var output = "";
-  if (typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
-  }
-  if (typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
-  }
-  console.log(output);
-}
+// function fun2() {
+//   var output = "";
+//   if (typeof myGlobal != "undefined") {
+//     output += "myGlobal: " + myGlobal;
+//   }
+//   if (typeof oopsGlobal != "undefined") {
+//     output += " oopsGlobal: " + oopsGlobal;
+//   }
+//   console.log(output);
+// }
 
-function myLocalScope() {
-    // Only change code below this line
-  var myVar;
-    console.log('inside myLocalScope', myVar);
-  }
-  myLocalScope();
+// function myLocalScope() {
+//     // Only change code below this line
+//   var myVar;
+//     console.log('inside myLocalScope', myVar);
+//   }
+//   myLocalScope();
 
-  // Run and check the console
-  // myVar is not defined outside of myLocalScope
-  console.log('outside myLocalScope', myVar);
+//   // Run and check the console
+//   // myVar is not defined outside of myLocalScope
+//   console.log('outside myLocalScope', myVar);
 
-  // Setup
-const outerWear = "T-Shirt";
+//   // Setup
+// const outerWear = "T-Shirt";
 
-function myOutfit() {
-  // Only change code below this line
-let outerWear = "sweater";
-  // Only change code above this line
-  return outerWear;
-}
+// function myOutfit() {
+//   // Only change code below this line
+// let outerWear = "sweater";
+//   // Only change code above this line
+//   return outerWear;
+// }
 
-myOutfit();
+// myOutfit();
 
-// Setup
-let sum = 0;
+// // Setup
+// let sum = 0;
 
-function addThree() {
-  sum = sum + 3;
-}
+// function addThree() {
+//   sum = sum + 3;
+// }
 
-// Only change code below this line
-function addFive() {
-  sum = sum + 5;
-}
+// // Only change code below this line
+// function addFive() {
+//   sum = sum + 5;
+// }
 
-// Only change code above this line
+// // Only change code above this line
 
-addThree();
-addFive();
+// addThree();
+// addFive();
 
-// Setup
-let processed = 0;
+// // Setup
+// let processed = 0;
 
-function processArg(num) {
-  return (num + 3) / 5;
-}
-//!! 56 -  Task
-// Only change code below this line
-processed = processArg(7);
+// function processArg(num) {
+//   return (num + 3) / 5;
+// }
+// //!! 56 -  Task
+// // Only change code below this line
+// processed = processArg(7);
 
-//!! 57 -  Task
-function nextInLine(arr, item) {
-    // Only change code below this line
-    arr.push(item);
-    let deleted = arr[0];
-    arr.shift();
+// //!! 57 -  Task
+// function nextInLine(arr, item) {
+//     // Only change code below this line
+//     arr.push(item);
+//     let deleted = arr[0];
+//     arr.shift();
 
-    return deleted;
-    // Only change code above this line
-  }
+//     return deleted;
+//     // Only change code above this line
+//   }
 
-  // Setup
-  const testArr = [1, 2, 3, 4, 5];
+//   // Setup
+//   const testArr = [1, 2, 3, 4, 5];
 
-  // Display code
-  console.log("Before: " + JSON.stringify(testArr));
-  console.log(nextInLine(testArr, 6));
-  console.log("After: " + JSON.stringify(testArr));
+//   // Display code
+//   console.log("Before: " + JSON.stringify(testArr));
+//   console.log(nextInLine(testArr, 6));
+//   console.log("After: " + JSON.stringify(testArr));
 
 
-  //!! 58 -  Task
-  function welcomeToBooleans() {
-    // Only change code below this line
+//   //!! 58 -  Task
+//   function welcomeToBooleans() {
+//     // Only change code below this line
 
-    return true; // Change this line
+//     return true; // Change this line
 
-    // Only change code above this line
-  }
+//     // Only change code above this line
+//   }
 
-//!! 59 -  Task
-  function trueOrFalse(wasThatTrue) {
-    // Only change code below this line
+// //!! 59 -  Task
+//   function trueOrFalse(wasThatTrue) {
+//     // Only change code below this line
 
-  return wasThatTrue ? "Yes, that was true" : "No, that was false";
+//   return wasThatTrue ? "Yes, that was true" : "No, that was false";
 
-    // Only change code above this line
+//     // Only change code above this line
 
-  }
+//   }
 
-  //!! 60 -  Task
+//   //!! 60 -  Task
 
-  // Setup
-function testEqual(val) {
-    if (val == 12 ) { // Change this line
-      return "Equal";
-    }
-    return "Not Equal";
-  }
+//   // Setup
+// function testEqual(val) {
+//     if (val == 12 ) { // Change this line
+//       return "Equal";
+//     }
+//     return "Not Equal";
+//   }
 
-  testEqual(10);
+//   testEqual(10);

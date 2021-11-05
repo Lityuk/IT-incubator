@@ -431,60 +431,86 @@
 //   const shirtValue = testObj.shirt;    // Change this line
 
 //   //!! 85 -  Task
-// Setup
-const testObj = {
-    "an entree": "hamburger",
-    "my side": "veggies",
-    "the drink": "water"
-  };
+// // Setup
+// const testObj = {
+//     "an entree": "hamburger",
+//     "my side": "veggies",
+//     "the drink": "water"
+//   };
+
+//   // Only change code below this line
+//   const entreeValue = testObj["an entree"];   // Change this line
+//   const drinkValue = testObj["the drink"];    // Change this line
+
+// //   //!! 86 -  Task
+//   // Setup
+// const testObj = {
+//     12: "Namath",
+//     16: "Montana",
+//     19: "Unitas"
+//   };
+
+//   // Only change code below this line
+//   const playerNumber = 16;  // Change this line
+//   const player = testObj[playerNumber];   // Change this line
+
+// //!! 87 -  Task
+//   // Setup
+// const myDog = {
+//     "name": "Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["freeCodeCamp Campers"]
+//   };
+//   myDog.name = "Happy Coder";
+//   // Only change code below this line
+
+// //!! 88 -  Task
+//   const myDog = {
+//     "name": "Happy Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["freeCodeCamp Campers"]
+//   };
+
+//   myDog.bark = "woof";
+
+// //!! 89 -  Task
+// const myDog = {
+//     "name": "Happy Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["freeCodeCamp Campers"],
+//     "bark": "woof"
+//   };
+
+//   // Only change code below this line
+//   delete myDog.tails;
+
+
+
+
+//!! 90 -  Task
+function phoneticLookup(val) {
+  let result = "";
 
   // Only change code below this line
-  const entreeValue = testObj["an entree"];   // Change this line
-  const drinkValue = testObj["the drink"];    // Change this line
+  let loocup = {
+    alpha: "Adams",
 
-//   //!! 86 -  Task
-  // Setup
-const testObj = {
-    12: "Namath",
-    16: "Montana",
-    19: "Unitas"
+    bravo: "Boston",
+
+    charlie: "Chicago",
+
+    delta: "Denver",
+    echo: "Easy",
+
+    foxtrot: "Frank",
   };
 
-  // Only change code below this line
-  const playerNumber = 16;  // Change this line
-  const player = testObj[playerNumber];   // Change this line
+  result = loocup[val];
+  // Only change code above this line
+  return result;
+}
 
-//!! 87 -  Task
-  // Setup
-const myDog = {
-    "name": "Coder",
-    "legs": 4,
-    "tails": 1,
-    "friends": ["freeCodeCamp Campers"]
-  };
-  myDog.name = "Happy Coder";
-  // Only change code below this line
-
-//!! 88 -  Task
-  const myDog = {
-    "name": "Happy Coder",
-    "legs": 4,
-    "tails": 1,
-    "friends": ["freeCodeCamp Campers"]
-  };
-
-  myDog.bark = "woof";
-
-
-
-//!! 89 -  Task
-const myDog = {
-    "name": "Happy Coder",
-    "legs": 4,
-    "tails": 1,
-    "friends": ["freeCodeCamp Campers"],
-    "bark": "woof"
-  };
-
-  // Only change code below this line
-  delete myDog.tails;
+phoneticLookup("charlie");

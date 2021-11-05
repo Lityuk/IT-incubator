@@ -441,3 +441,15 @@ const testObj = {
   // Only change code below this line
   const entreeValue = testObj["an entree"];   // Change this line
   const drinkValue = testObj["the drink"];    // Change this line
+
+//   //!! 86 -  Task
+  // Setup
+const testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+  };
+
+  // Only change code below this line
+  const playerNumber = 16;  // Change this line
+  const player = testObj[playerNumber];   // Change this line

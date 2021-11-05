@@ -553,3 +553,41 @@ function checkObj(obj, checkProp) {
       ],
     }
   ];
+
+//!! 93 -  Task
+
+  const myStorage = {
+    "car": {
+      "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
+       },
+      "outside": {
+        "trunk": "jack"
+      }
+    }
+  };
+
+  const gloveBoxContents = myStorage.car.inside["glove box"];
+
+//!! 94 -  Task
+  const myPlants = [
+    {
+      type: "flowers",
+      list: [
+        "rose",
+        "tulip",
+        "dandelion"
+      ]
+    },
+    {
+      type: "trees",
+      list: [
+        "fir",
+        "pine",
+        "birch"
+      ]
+    }
+  ];
+
+  const secondTree = myPlants[1].list[1];

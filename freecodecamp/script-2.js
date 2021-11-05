@@ -464,3 +464,13 @@ const myDog = {
   };
   myDog.name = "Happy Coder";
   // Only change code below this line
+
+//!! 88 -  Task
+  const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+  };
+
+  myDog.bark = "woof";

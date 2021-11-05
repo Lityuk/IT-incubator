@@ -377,3 +377,34 @@ function abTest(a, b) {
   }
 
   abTest(2,2);
+
+//!! 82 -  Task
+  let count = 0;
+
+function cc(card) {
+  // Only change code below this line
+  if (card < 7) {
+    count++;
+  } else {
+    switch (card) {
+      case 10:
+      case 'J':
+      case 'Q':
+      case 'K':
+      case 'A':
+        count--;
+    }
+  }
+
+if (count <= 0) {
+  return count + " Hold"
+} else {
+   return count + " Bet"
+}
+
+
+    return "Change Me";
+  // Only change code above this line
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');

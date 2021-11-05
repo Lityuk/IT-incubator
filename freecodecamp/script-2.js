@@ -408,3 +408,15 @@ if (count <= 0) {
 }
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+//!! 83 -  Task
+
+const myDog = {
+    // Only change code below this line
+    "name": "Bob",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["human", "another one"],
+
+    // Only change code above this line
+  };

@@ -131,33 +131,44 @@ testLogicalAnd(10);
 //!! 70 -  Task
 
 function testLogicalOr(val) {
-    // Only change code below this line
+  // Only change code below this line
 
-    if (val <10 || val > 20) {
-      return "Outside";
-    }
-
-    // Only change code above this line
-    return "Inside";
+  if (val < 10 || val > 20) {
+    return "Outside";
   }
 
-  testLogicalOr(15);
+  // Only change code above this line
+  return "Inside";
+}
 
-  //!! 71 -  Task
-  function testElse(val) {
-    let result = "";
-    // Only change code below this line
+testLogicalOr(15);
 
-    if (val > 5) {
-      result = "Bigger than 5";
-    }
+//!! 71 -  Task
+function testElse(val) {
+  let result = "";
+  // Only change code below this line
 
-    else {
-      result = "5 or Smaller";
-    }
-
-    // Only change code above this line
-    return result;
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else {
+    result = "5 or Smaller";
   }
 
-  testElse(4);
+  // Only change code above this line
+  return result;
+}
+
+testElse(4);
+
+//!! 72 -  Task
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+    return "Between 5 and 10";
+  }
+}
+
+testElseIf(7);

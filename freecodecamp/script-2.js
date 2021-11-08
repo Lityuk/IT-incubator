@@ -788,4 +788,11 @@ function randomRange(myMin, myMax) {
   // Only change code above this line
 }
 
+// //!! 108 -  Task
+function convertToInteger(str) {
+  return parseInt(str);
+  }
+
+  convertToInteger("56");
+
 

@@ -719,7 +719,6 @@ function sum(arr, n) {
 }
 ``;
 
-
 // //!! 104 -  Task
 
 // Setup
@@ -758,8 +757,18 @@ function lookUpProfile(name, prop) {
         return contacts[i][prop];
       } else return "No such property";
     }
-  } return "No such contact";
+  }
+  return "No such contact";
   // Only change code above this line
 }
 
 lookUpProfile("Akira", "likes");
+
+// //!! 104 -  Task
+function randomFraction() {
+  // Only change code below this line
+
+  return Math.random();
+
+  // Only change code above this line
+}

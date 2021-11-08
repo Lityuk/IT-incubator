@@ -830,3 +830,13 @@ function countdown(n) {
   }
 }
 // Only change code above this line
+
+// //!! 113 -  Task
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum == startNum) {
+    return [startNum];
+  }
+  let countArr = rangeOfNumbers(startNum, endNum - 1);
+  countArr.push(endNum);
+  return countArr;
+};

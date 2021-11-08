@@ -764,11 +764,21 @@ function lookUpProfile(name, prop) {
 
 lookUpProfile("Akira", "likes");
 
-// //!! 104 -  Task
+// //!! 105 -  Task
 function randomFraction() {
   // Only change code below this line
 
   return Math.random();
 
   // Only change code above this line
+}
+
+
+// //!! 106 -  Task
+
+function randomWholeNum() {
+
+  // Only change code below this line
+
+  return Math.floor(Math.random() * 10);
 }

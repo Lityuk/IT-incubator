@@ -816,3 +816,17 @@ function checkSign(num) {
 }
 
 checkSign(10);
+
+// //!! 112 -  Task
+// Only change code below this line
+function countdown(n) {
+
+  if (n < 1) {
+    return [];
+  } else {
+    let countArr = countdown(n - 1);
+    countArr.unshift(n);
+    return countArr;
+  }
+}
+// Only change code above this line

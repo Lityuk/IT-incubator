@@ -791,22 +791,28 @@ function randomRange(myMin, myMax) {
 // //!! 108 -  Task
 function convertToInteger(str) {
   return parseInt(str);
-  }
+}
 
-  convertToInteger("56");
-
+convertToInteger("56");
 
 // //!! 109 -  Task
-  function convertToInteger(str) {
-    return parseInt(str, 2);
-  }
+function convertToInteger(str) {
+  return parseInt(str, 2);
+}
 
-  convertToInteger("10011");
-
+convertToInteger("10011");
 
 // //!! 110 -  Task
-  function checkEqual(a, b) {
-    return a === b ? "Equal" : "Not Equal";
-    }
+function checkEqual(a, b) {
+  return a === b ? "Equal" : "Not Equal";
+}
 
-    checkEqual(1, 2);
+checkEqual(1, 2);
+
+
+// //!! 111 -  Task
+function checkSign(num) {
+  return num > 0 ? "positive" : num == 0 ? "zero" : "negative";
+}
+
+checkSign(10);

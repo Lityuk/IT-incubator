@@ -26,9 +26,23 @@ function tail(arr) {
 }
 
 function init(arr) {
-  return arr.slice(0, arr.length-1 );
+  return arr.slice(0, arr.length - 1);
 }
 
 function last(arr) {
-  return arr[arr.length-1];
+  return arr[arr.length - 1];
 }
+
+function deepCount(arr) {
+  let sum = arr.length;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i])) {
+      sum += deepCount(arr[i]);
+    }
+  }
+  console.log(sum);
+  return sum;
+}
+
+deepCount([1, 2, [3, 4, [5]]]);

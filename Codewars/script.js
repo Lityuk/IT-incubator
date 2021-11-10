@@ -46,3 +46,10 @@ function deepCount(arr) {
 }
 
 deepCount([1, 2, [3, 4, [5]]]);
+
+
+// !The Coupon Code
+
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+  return (enteredCode === correctCode && new Date(currentDate) <= new Date(expirationDate));
+}

@@ -191,3 +191,12 @@
 // temp = thermos.temperature; // 26 in Celsius
 //
 
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+export {uppercaseString,  lowercaseString};

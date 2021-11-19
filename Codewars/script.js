@@ -83,18 +83,18 @@ function myLanguages(results) {
 }
 
 let validWord = function (dictionary, word) {
-  let newWord = "";
-  for (let i = 0; i < dictionary.length; i++) {
-    if (dictionary[i] == word.substring(0, dictionary[i].length)) {
-      // newWord += word.substring(0, dictionary[i].length);
-      // dictionary.splice(0, dictionary[i].length);
-      newWord += word.substring(0, dictionary[i].length + 1);
-
-      dictionary.splice(dictionary[i], 1);
-      console.log(dictionary);
+  for (let i = 1; i <= word.length; i++) {
+    console.log(word.slice(i));
+    console.log(word.slice(0, i));
+    if (dictionary.includes(word.slice(0, i))) {
+      if (validWord(dictionary, word.slice(i))) {
+        console.log(true);
+        return true;
+      }
     }
   }
-  console.log(newWord);
-};
+  return (word.length == 0) ? true : false;
+}
 
-validWord(["abc", "a", "ab"], "abc");
+validWord(["ab", "a", "abc"], "codewars");
+

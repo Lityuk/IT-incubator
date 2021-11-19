@@ -76,9 +76,9 @@ function myLanguages(results) {
   });
 
   console.log(arr);
-  arr.forEach(key => {
+  arr.forEach((key) => {
     key[1] >= 60 ? result.push(key[0]) : false;
-  })
+  });
   return result;
 }
 

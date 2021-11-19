@@ -1,3 +1,7 @@
 /app.js
 
 .idea/
+
+node_modules/
+
+*.json

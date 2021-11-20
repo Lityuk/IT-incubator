@@ -226,3 +226,5 @@
 // // Only change code above this line
 //
 // subtract(7, 4);
+
+let makeServerRequest = new Promise(function(resolve, reject) {});

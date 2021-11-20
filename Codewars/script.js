@@ -82,19 +82,24 @@ function myLanguages(results) {
   return result;
 }
 
-let validWord = function (dictionary, word) {
-  for (let i = 1; i <= word.length; i++) {
-    console.log(word.slice(i));
-    console.log(word.slice(0, i));
-    if (dictionary.includes(word.slice(0, i))) {
-      if (validWord(dictionary, word.slice(i))) {
-        console.log(true);
-        return true;
-      }
-    }
-  }
-  return (word.length == 0) ? true : false;
+// let validWord = function (dictionary, word) {
+//   for (let i = 1; i <= word.length; i++) {
+//     console.log(word.slice(i));
+//     console.log(word.slice(0, i));
+//     if (dictionary.includes(word.slice(0, i))) {
+//       if (validWord(dictionary, word.slice(i))) {
+//         console.log(true);
+//         return true;
+//       }
+//     }
+//   }
+//   return (word.length == 0) ? true : false;
+// }
+//
+// validWord(["ab", "a", "abc"], "codewars");
+
+function roundToNext5(n){
+
+  return (n <= 0 || n % 5 == 0) ?  n - n % 5 : n + (5 - n % 5);
+
 }
-
-validWord(["ab", "a", "abc"], "codewars");
-

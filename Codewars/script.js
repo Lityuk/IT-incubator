@@ -98,8 +98,28 @@ function myLanguages(results) {
 //
 // validWord(["ab", "a", "abc"], "codewars");
 
-function roundToNext5(n){
-
-  return (n <= 0 || n % 5 == 0) ?  n - n % 5 : n + (5 - n % 5);
-
+function roundToNext5(n) {
+  return n <= 0 || n % 5 == 0 ? n - (n % 5) : n + (5 - (n % 5));
 }
+
+function sortByBit(arr) {
+  arr.sort(function (a, b) {
+    if (
+      Array.from(a.toString(2)).reduce((sum, el) => sum + +el, 0) >
+      Array.from(b.toString(2)).reduce((sum, el) => sum + +el, 0)
+    ) {
+      return 1;
+    }
+    if (
+      Array.from(a.toString(2)).reduce((sum, el) => sum + +el, 0) <
+      Array.from(b.toString(2)).reduce((sum, el) => sum + +el, 0)
+    ) {
+      return -1;
+    }
+    return a.toString(2) - b.toString(2);
+  });
+  console.log(arr);
+}
+
+let a = [3, 8, 3, 6, 5, 7, 9, 1];
+sortByBit(a);

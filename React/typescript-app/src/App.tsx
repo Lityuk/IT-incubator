@@ -3,11 +3,11 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className='app-wrapepr'>
+    <div className='app-wrapper'>
       <header className='header'>
         <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="" />
       </header>
-      <nav className='navBar'>
+      <nav className='nav'>
         <ul>
           <li>Profile</li>
           <li>Messages</li>

@@ -123,3 +123,28 @@ function sortByBit(arr) {
 
 let a = [3, 8, 3, 6, 5, 7, 9, 1];
 sortByBit(a);
+
+class Song {
+  constructor(title, artist) {
+    this.title = title;
+    this.artist = artist;
+    this.listeners = [];
+  }
+  howMany(arr) {
+    let result = [];
+    arr.forEach((e) => {
+      if (this.listeners.includes(e.toLowerCase())) {
+      } else {
+        this.listeners.push(e.toLowerCase());
+        result.push(e);
+      }
+    });
+
+    console.log(result.length);
+    return result.length;
+  }
+}
+
+let mountMoose = new Song("Mount Moose", "The Snazzy Moose");
+mountMoose.howMany(["John", "joHN", "carl"]);
+mountMoose.howMany(["John", "Fred", "Bob", "Carl", "RyAn"]);

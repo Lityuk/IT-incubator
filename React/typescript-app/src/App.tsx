@@ -1,21 +1,15 @@
 import React from "react";
-import './App.css';
+import "./App.css";
+import Header from "./components/Headert";
+import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
 
 const App = () => {
   return (
-    <div className='app-wrapper'>
-      <header className='header'>
-        <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="" />
-      </header>
-      <nav className='nav'>
-        <ul>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>News</li>
-          <li>Music</li>
-        </ul>
-      </nav>
-        <div className='content'>Main content</div>
+    <div className="app-wrapper">
+      <Header />
+      <Navbar />
+      <Profile />
     </div>
   );
 };

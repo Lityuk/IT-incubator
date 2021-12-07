@@ -118,7 +118,7 @@ function sortByBit(arr) {
     }
     return a.toString(2) - b.toString(2);
   });
-  console.log(arr);
+  // console.log(arr);
 }
 
 let a = [3, 8, 3, 6, 5, 7, 9, 1];
@@ -140,7 +140,7 @@ class Song {
       }
     });
 
-    console.log(result.length);
+    // console.log(result.length);
     return result.length;
   }
 }
@@ -148,3 +148,13 @@ class Song {
 let mountMoose = new Song("Mount Moose", "The Snazzy Moose");
 mountMoose.howMany(["John", "joHN", "carl"]);
 mountMoose.howMany(["John", "Fred", "Bob", "Carl", "RyAn"]);
+
+function singleDigit(n) {
+  if (n < 10) {
+    return n;
+  }
+  let sum = Array.from(n.toString(2)).reduce((a, b) => a + +b, 0);
+  return sum < 10 ? sum : singleDigit(sum);
+}
+
+singleDigit(5);

@@ -158,3 +158,36 @@ function singleDigit(n) {
 }
 
 singleDigit(5);
+
+function faroCount(deckSize) {
+  let arr = [];
+  let firstHalf = [];
+  let secondHalf = [];
+  let shuffleDeck = [];
+  let count = 1;
+
+  for (let i = 0; i < deckSize; i++) {
+    arr.push(i);
+    i < deckSize / 2 ? firstHalf.push(i) : secondHalf.push(i);
+  }
+
+  for (let j = 0; j < deckSize / 2; j++) {
+    shuffleDeck.push(firstHalf[j]);
+    shuffleDeck.push(secondHalf[j]);
+  }
+
+  while (shuffleDeck.join("") != arr.join("")) {
+    firstHalf = shuffleDeck.slice(0, deckSize / 2);
+    secondHalf = shuffleDeck.slice(deckSize / 2);
+    shuffleDeck = [];
+    for (let j = 0; j < deckSize / 2; j++) {
+      shuffleDeck.push(firstHalf[j]);
+      shuffleDeck.push(secondHalf[j]);
+    }
+    count++;
+  }
+
+  console.log(count);
+}
+
+faroCount(30);

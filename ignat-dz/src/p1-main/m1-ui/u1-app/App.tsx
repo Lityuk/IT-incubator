@@ -1,11 +1,15 @@
 import React from 'react'
 import s from './App.module.css'
 import HW1 from '../../../p2-homeworks/h1/HW1'
+import Message from '../../../p2-homeworks/h1/Message'
+
+
 
 function App() {
     return (
         <div className={s.App}>
             <div>react homeworks:</div>
+    <Message/>
             <HW1/>
             {/*<HW2/>*/}
             {/*<HW3/>*/}

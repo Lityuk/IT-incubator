@@ -7,14 +7,25 @@ const messageData = {
     time: '22:00',
 }
 
-function HW1() {
+// type PropsType = {
+//     avatar: string;
+//     name: string;
+//     message: string;
+//     time: string;
+// }
+
+function HW1(props: any) {
     return (
         <div>
             <hr/>
             homeworks 1
 
-            {/*should work (должно работать)*/}
+            <div className="wrapper">
+                <div>imag</div>
+                <div>text</div>
+            </div>
 
+            {/*should work (должно работать)*/}
             {/*<Message*/}
             {/*    avatar={messageData.avatar}*/}
             {/*    name={messageData.name}*/}

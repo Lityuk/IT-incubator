@@ -7,9 +7,6 @@
   pointer-events: none;
 }
 
-.wrapper {
-  background-color: tomato;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

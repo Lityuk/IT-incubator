@@ -193,14 +193,25 @@ function faroCount(deckSize) {
 
 // faroCount(30);
 
-function bump(x){
+function bump(x) {
     return x.match(/n/g) == null || x.match(/n/g).length <= 15 ? "Woohoo!" : "Car Dead";
 }
 
 bump("___");
 
-function strCount(str, letter){
-    console.log(str.split(letter).length-1)
+function strCount(str, letter) {
+    console.log(str.split(letter).length - 1)
 }
 
-strCount('Hello', 'o')
+// strCount('Hello', 'o')
+
+
+function adjacentElementsProduct(array) {
+    let newArr = array.map((i, index) => {
+        return index == array.length - 1 ? i * array[index - 1] : i * array[index + 1];
+    })
+
+    console.log(Math.max(...newArr))
+}
+
+adjacentElementsProduct([1, 5, 10, 9]);

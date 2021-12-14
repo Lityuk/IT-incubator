@@ -21,3 +21,7 @@ let result = extractStr.match(codingRegex); // Change this line
 let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /Twinkle/gi; // Change this line
 let result = twinkleStar.match(starRegex); // Change this line
+
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/;
+let result = unRegex.test(exampleStr);

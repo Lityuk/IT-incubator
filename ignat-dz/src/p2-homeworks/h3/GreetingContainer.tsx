@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Greeting from './Greeting'
 
 type GreetingContainerPropsType = {
-    users: any // need to fix any
+    users: string // need to fix any
     addUserCallback: any // need to fix any
 }
 

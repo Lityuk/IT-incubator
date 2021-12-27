@@ -1,6 +1,7 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from "react";
 import {FilterValuesType} from "./App";
 import { Button } from "./components/Button";
+import FullInput from "./components/FullInput";
 
 type TaskType = {
     id: string;
@@ -18,22 +19,22 @@ type PropsType = {
 };
 
 export function Todolist(props: PropsType) {
-    const [title, setTitle] = useState("");
+    // const [title, setTitle] = useState("");
 
-    const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
-        setTitle(event.currentTarget.value);
-    };
+    // const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
+    //     setTitle(event.currentTarget.value);
+    // };
 
-    const onClickHandler = () => {
-        props.addTask(title);
-        setTitle("");
-    };
+    // const onClickHandler = () => {
+    //     props.addTask(title);
+    //     setTitle("");
+    // };
 
-    const onKeyPressHandler = (event: KeyboardEvent<HTMLInputElement>) => {
-        if (event.key === "Enter") {
-            onClickHandler();
-        }
-    };
+    // const onKeyPressHandler = (event: KeyboardEvent<HTMLInputElement>) => {
+    //     if (event.key === "Enter") {
+    //         onClickHandler();
+    //     }
+    // };
 
     // const changeFilterAllHandler = () => {
     //     props.changeFilter("all");
@@ -64,13 +65,16 @@ export function Todolist(props: PropsType) {
     return (
         <div>
             <h3>{props.title}</h3>
-            <div>
-                <input
-                    value={title}
-                    onChange={onChangeHandler}
-                    onKeyPress={onKeyPressHandler}/>
-                <button onClick={onClickHandler}>+</button>
-            </div>
+            {/*<div>*/}
+            {/*    <input*/}
+            {/*        value={title}*/}
+            {/*        onChange={onChangeHandler}*/}
+            {/*        onKeyPress={onKeyPressHandler}/>*/}
+            {/*    <button onClick={onClickHandler}>+</button>*/}
+            {/*</div>*/}
+
+            <FullInput addTask = {props.addTask}/>
+
             <ul>
                 {props.tasks.map((t) => (
                     <li key={t.id}>

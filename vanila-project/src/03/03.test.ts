@@ -1,4 +1,4 @@
-import { addSkill } from "./03";
+import { addSkill, StudentType } from "./03";
 
 let student: StudentType;
 

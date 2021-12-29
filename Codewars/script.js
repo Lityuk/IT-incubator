@@ -215,3 +215,33 @@ function adjacentElementsProduct(array) {
 }
 
 adjacentElementsProduct([1, 5, 10, 9]);
+
+
+function incrementer(nums) {
+    let arr = [];
+    let i = 0;
+
+    arr = nums.map((m) => {
+        i++;
+        return (m + i) % 10;
+    });
+}
+
+incrementer([4, 6, 7, 1, 3]);
+
+var buy = function (x, arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 1; j < arr.length; j++) {
+            if (x == arr[i] + arr[j]) {
+                console.log(arr[i], arr[j]);
+                console.log([i, j]);
+                return
+            }
+        }
+    }
+
+    return null;
+};
+
+buy(5, [5, 2, 3, 4, 5]);
+buy(3,[1,1])

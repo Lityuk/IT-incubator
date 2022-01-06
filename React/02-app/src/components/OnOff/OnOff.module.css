@@ -1,0 +1,18 @@
+
+.round {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: -7px;
+    margin-left: 10px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}

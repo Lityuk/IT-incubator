@@ -38,3 +38,16 @@ let result = quoteSample.match(alphabetRegex); // Change this line
 let quoteSample = "Blueberry 3.141592653s are delicious.";
 let myRegex = /[2-6h-s]/gi; // Change this line
 let result = quoteSample.match(myRegex); // Change this line
+
+let quoteSample = "3 blind mice.";
+let myRegex = /[^0-9aeiou]/gi; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
+
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/g; // Change this line
+let result = difficultSpelling.match(myRegex);
+
+// Only change code below this line
+let chewieRegex = /Aa*/; // Change this line
+// Only change code above this line
+let result = chewieQuote.match(chewieRegex);

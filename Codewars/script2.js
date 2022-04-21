@@ -92,15 +92,34 @@ function askForMissingDetails(list) {
     .filter((j) => j != undefined));
 }
 
-console.log(askForMissingDetails(list1)[0]);
+// console.log(askForMissingDetails(list1)[0]);
 
 // !Narcissistic Numbers
 function isNarcissistic(n) {
   const arr = Array.from(n.toString());
 
-  arr.map((el) => Math.pow(el, arr.length)).reduce((prev, curr) => prev + curr) === n ? console.log(true): console.log(false);
+  return arr.map((el) => Math.pow(el, arr.length)).reduce((prev, curr) => prev + curr) === n;
 
-  console.log(arr.map((el) => Math.pow(el, arr.length)).reduce((prev, curr) => prev + curr));
 }
 
 isNarcissistic(435);
+
+
+function chain(input, fs) {
+
+    console.log(fs.reduce((prev, curr )=> {
+      return curr(prev)
+     }, input));
+
+  }
+
+
+  function add(x) {
+    return x + 10;
+  }
+
+  function mult(x) {
+    return x * 30;
+  }
+
+  chain(2, [add, mult])

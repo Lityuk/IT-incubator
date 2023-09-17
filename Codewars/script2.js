@@ -123,3 +123,4 @@ function chain(input, fs) {
   }
 
   chain(2, [add, mult])
+
